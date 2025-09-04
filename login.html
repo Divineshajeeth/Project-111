@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="./style.css" rel="stylesheet">
+    <style>
+        .mainDiv {
+            text-align: center;
+        }
+
+        #imgMovie {
+            text-align: center;
+            display: flex;
+            margin: 50px 160px;
+            padding: 20px;
+        }
+
+        .imgs {
+            margin: 6px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+            background: #F0F2F5;
+        }
+
+        nav {
+            background: #fff;
+            padding: 10px 20px;
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .webName {
+            font-weight: bold;
+            font-size: 25px;
+            text-decoration: none;
+            background-color: yellow;
+        }
+
+        .webName span {
+            color: orange;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555050;
+            margin-left: 15px;
+        }
+
+        .alink:hover {
+            background-color: rgb(170, 170, 173);
+        }
+
+        .login {
+            margin: 30px 200px 400px 600px;
+            padding: 35px;
+            background: #fff;
+            border-radius: 10px;
+            width: 400px;
+            height: auto;
+            text-align: center !important;
+            align-items: center !important;
+        }
+
+        .submit {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 3px;
+            background: #292cff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        .submit:hover {
+            background: #05ff11;
+        }
+
+        .btnFb {
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0px;
+            background: #3B5998;
+            color: rgb(250, 250, 248);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        .btnGole {
+            width: 100%;
+            padding: 10px;
+            background: #DD4B39;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        .btnFb:hover {
+            background: #5A7DCA;
+            font-size: 15px;
+        }
+
+        .btnGole:hover {
+            background: #DF6E5F;
+            font-size: 15px;
+        }
+
+        .forA {
+            font-size: 14px;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .forA:hover {
+            background-color: #F4F4F5;
+            font-size: 15px;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            margin: 2px 0;
+            border-radius: 8px;
+        }
+
+        .sigUpp:hover {
+            background-color: #FBFCFD;
+            font-size: 18px;
+        }
+
+        .afb {
+            color: #F0EEED;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a class="webName">Show<span>Trackr</span></a>
+            <a class="alink" href="./home.html">Home</a>
+            <a class="alink" href="./add.html">Add</a>
+
+        </div>
+        <div>
+            <a class="alink" href="./login.html">Login</a>
+            <a class="alink" href="./Signup.html">Sign Up</a>
+        </div>
+    </nav>
+    <div class="login">
+        <h2>Login</h2>
+        <form>
+            <input id="email" class="input" type="email" placeholder=" enter your email" required><br>
+            <input id="password" class="input" type="password" placeholder=" enter your password" required><br>
+            <button type="submit" class="submit" onclick="login(form)">Login</button>
+            <a class="forA" href="./Signup.html"><b>Forget password?</b></a>
+            <p>Don't have an account yet ? <a class="sigUpp" href="./signup.html"> Signup</a></p>
+        </form>
+        <hr>
+        <button class="btnFb"><a class="afb" href="https://www.facebook.com/" target="_blank">Sign in with
+                Facebook</a></button>
+        <button class="btnGole"><a class="afb" href="https://www.google.com/" target="_blank">Sign in with
+                Google</a></button>
+    </div>
+    <script>
+        function login(form) {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value; if (email === "" || password === "") {
+                alert("Please enter email and password");
+            } else {
+                alert("Login successfully");
+            }
+        }  </script>
+</body>
+
+</html>
+
