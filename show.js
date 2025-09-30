@@ -1,5 +1,5 @@
 function show1(){
-    document.getElementById("shows").innerHTML=`<section >
+    document.getElementById("shows").innerHTML=`<section >1
    <div >
     <div >
         <img  src="./93c12d79da735856e9358e8306a402b2.jpg" alt="">
